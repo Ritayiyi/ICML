@@ -22,3 +22,21 @@
 | FusionMamba  | 46.242 | 0.976 | 0.027 | 1.278   | 0.972 | 0.074 | 0.121 | 0.756 |
 | WINet        | 49.405 | 0.984 | 0.016 | 0.968   | 0.977 | 0.060 | 0.108 | 0.855 |
 | HFiN         | 41.938 | 0.966 | 0.039 | 2.534   | 0.894 | 0.136 | 0.158 | 0.722 |
+
+
+## Table 4: Ablation Experiment Design
+
+| Setting               | Local | Global | Loss | PSNR/SSIM  |
+|-----------------------|-------|--------|------|------------|
+| Complete Model        | ✔     | ✔      | ✔    | 32dB/0.92  |
+| Local                 | ✔     | ✖      | ✖    | PSNR↓      |
+| Global                | ✖     | ✔      | ✔    | SSIM↓      |
+| Freeze target network | ✔     | ✔      | ✖    | Crash      |
+
+## Table 5: Effect of hyperparameter \( \tau \)
+
+| \( \tau \) | SAM↓ | QNR↑ |
+|------------|------|------|
+| 0.9        |      |      |
+| 0.99       |      |      |
+| 0.999      |      |      |
