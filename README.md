@@ -33,9 +33,9 @@
 | Global                | ✖     | ✔      | ✔    | SSIM↓      |
 | Freeze target network | ✔     | ✔      | ✖    | Crash      |
 
-## Table 5: Effect of hyperparameter \( \tau \)
+## Table 5: Effect of hyperparameter $$\tau$$
 
-| \( \tau \) | SAM↓ | QNR↑ |
+| $$\tau$$ | SAM↓ | QNR↑ |
 |------------|------|------|
 | 0.9        |      |      |
 | 0.99       |      |      |
